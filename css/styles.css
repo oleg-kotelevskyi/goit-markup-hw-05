@@ -596,11 +596,11 @@ img {
 .close-button {
   width: 24px;
   height: 24px;
+  border: 1px;
   border-radius: 100%;
   fill: #e7e9fc;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,11 +612,12 @@ img {
 
 .close-button:hover,
 .close-button:focus {
-  border-radius: 100%;
   background-color: #404bbf;
+  outline: 0;
 }
 
-.close-button:hover .close-icon {
+.close-button:hover .close-icon,
+.close-button:focus .close-icon {
   fill: #fff;
 }
 
@@ -654,8 +655,8 @@ img {
   border-color: #4d5ae5;
 }
 
-.modal-input:focus,
-.modal-input:hover + .input-icons {
+.modal-input:hover + .input-icons,
+.modal-input:focus + .input-icons {
   fill: #4d5ae5;
 }
 
@@ -685,6 +686,11 @@ img {
 .user-text-area {
   margin-left: 24px;
   margin-right: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
@@ -692,6 +698,13 @@ img {
   background-color: transparent;
   resize: none;
   padding: 8px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-text-area:hover,
+.user-text-area:focus {
+  border-color: #4d5ae5;
+  outline: 0;
 }
 
 .modal-check:checked + .modal-check-label span {
