@@ -198,6 +198,7 @@ img {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
+  outline: none;
 }
 
 /*----------------FEATURES-SECTION------------------*/
@@ -311,11 +312,13 @@ img {
 
 .icons {
   fill: #f4f4fd;
+  outline: none;
 }
 
 .team-social-list .social:hover,
 .team-social-list .social:focus {
   background-color: #404bbf;
+  outline: none;
 }
 
 /*----------------PORTFOLIO_SECTION------------------*/
@@ -350,8 +353,9 @@ img {
 .portfolio-item {
   width: 360px;
   display: grid;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -486,6 +490,7 @@ img {
 .footer-social-list .footer-social:hover,
 .footer-social-list .footer-social:focus {
   background-color: #31d0aa;
+  outline: none;
 }
 
 .subscribe {
@@ -519,6 +524,7 @@ img {
   height: 40px;
   border: 1px solid #fff;
   border-radius: 4px;
+  line-height: 2;
   background-color: transparent;
   color: #ffffff;
   font-size: 12px;
@@ -539,6 +545,7 @@ img {
 .footer-input:hover,
 .footer-input:focus {
   border: 1px solid #31d0aa;
+  outline: none;
 }
 
 .footer-btn {
@@ -564,6 +571,7 @@ img {
 .footer-btn:hover,
 .footer-btn:focus {
   background-color: #31d0aa;
+  outline: none;
 }
 
 .subscribe-icon {
@@ -665,6 +673,7 @@ img {
 .modal-input:focus,
 .modal-input:hover {
   border-color: #4d5ae5;
+  outline: none;
 }
 
 .modal-input:hover + .input-icons,
@@ -755,6 +764,15 @@ img {
   fill: transparent;
 }
 
+.modal-check-icon {
+  opacity: 0;
+}
+
+.modal-check-custom:checked,
+.modal-check-icon {
+  opacity: 1;
+}
+
 .modal-btn {
   font-weight: 500;
   font-size: 16px;
@@ -775,4 +793,5 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
+  outline: none;
 }
